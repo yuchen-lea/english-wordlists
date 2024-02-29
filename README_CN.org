@@ -1,0 +1,57 @@
+#+title: 帮助文档
+
+* 概述
+本项目致力于收录常用英语词表，提供一个标准化、易于访问的词表资源库。旨在为英语学习者和教育者提供便利。
+
+计划包含以下类型的词表：
+| 类型     | 语料库                 | 实例                        |
+|----------+------------------------+-----------------------------|
+| 通用词表 | 全面的语料库，例如COCA | The Oxford 3000、COCA 20000 |
+| 应试词表 | 相应的英文考试的文章   | CET4、NPEE                  |
+
++ 收录标准如下：
+  - 所有词表均以CSV格式提供，确保了其通用性和开放性。
+  - 提供可以确定词汇的最小信息量，因此不包括音标、释义等信息。
+  - 来源权威的词汇列表优先。
+
+* 现有词表
+  :PROPERTIES:
+  :COLUMNS:  %25ITEM %TODO %file %Vocabulary
+  :END:
+
+现有：
+  #+BEGIN: propview  :cols (ITEM PATH VOCABULARY) :noquote t :match "Level=2+TODO=\"40-DONE\""
+  | ITEM                             | PATH                              | VOCABULARY |
+  |----------------------------------+-----------------------------------+------------|
+  | CEFR: British English Vocabulary | [[file:CEFR-EVP-British-English.csv]] |      15696 |
+  |----------------------------------+-----------------------------------+------------|
+  |                                  |                                   |            |
+  #+END:
+
+待办：
+  #+BEGIN: propview  :cols (ITEM) :noquote t :match "Level=2+TODO=\"10-TODO\""
+  | ITEM                              |
+  |-----------------------------------|
+  | CEFR: American English Vocabulary |
+  |-----------------------------------|
+  |                                   |
+  #+END:
+** 40-DONE CEFR: British English Vocabulary
+     :PROPERTIES:
+     :PATH: [[file:CEFR-EVP-British-English.csv]]
+     :VOCABULARY: 15696
+     :END:
+
+- 来源： [[http://englishprofile.org/wordlists/evp][English Profile - EVP Online]]
+** 10-TODO CEFR: American English Vocabulary
+     :PROPERTIES:
+     :END:
+- 来源：[[http://englishprofile.org/american-english][English Profile - American English]]
+
+* 使用方法
+
+通过配合批量制卡工具使用，本项目的CSV格式词表可以方便地转换成英语学习卡片。这一方法尤其适合于需要大量记忆英语词汇的学习者，帮助他们以高效的方式提升词汇量。
+
+* Credits
+
+本项目的灵感来源于 [[https://github.com/mahavivo/english-wordlists][mahavivo/english-wordlists: 常用英语词汇表]]。
